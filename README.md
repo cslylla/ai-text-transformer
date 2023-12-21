@@ -28,7 +28,7 @@
 
 ### 3. Explore Further
 
-- Embark on the enchanting journey [here](https://charmed-enchanter.netlify.app) 👈🏻
+- Embark on the enchanting journey [here](https://elegant-melomakarona-72305b.netlify.app/) 👈🏻
 - Unveil the secrets of the [SheCodes AI API](https://www.shecodes.io/learn/apis/ai) 🤖
 - Explore more about the captivating [typewriter](https://github.com/tameemsafi/typewriterjs) used in this enchanting project ⌨️
 - Delve deeper into the enchantment of [SheCodes](https://www.shecodes.io/) 👩🏻‍💻
