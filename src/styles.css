@@ -1,0 +1,108 @@
+/* Variables */
+:root {
+  --background-gradient: radial-gradient(
+    circle at 10% 20%,
+    rgb(246, 187, 187) 0%,
+    rgb(249, 219, 217) 90%
+  );
+  --text-color: #5f4444;
+  --button-color: #af3264;
+  --button-hover-color: #ff63b5;
+  --button-text-color: #ffbbbb;
+  --joke-area-color: #ffbbbb;
+  --joke-area-border-color: #222222;
+}
+
+body {
+  font-family: "Crimson Pro", serif;
+  color: var(--text-color);
+}
+
+/* General */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background: var(--background-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin: 0;
+  padding-top: 4rem;
+}
+
+/* Joke */
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: var(--button-color);
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.joke {
+  background-color: var(--joke-area-color);
+  border-radius: 5px;
+  border: 5px solid var(--joke-area-border-color);
+  margin: 2rem 0 0 0;
+  padding: 1rem;
+  min-height: 15rem;
+  text-align: left;
+}
+
+.joke p {
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  font-size: small;
+  font-weight: bold;
+}
+
+small a {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+small a:hover {
+  color: var(--button-hover-color);
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 2rem 0;
+  }
+}

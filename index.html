@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An AI text transformer to write words in Jane Austen's literary style.">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Charmed</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,900;1,200&display=swap"
+        rel="stylesheet">
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Charmed</h1>
+            <h2>Enchant Your Words with Jane Austen's Touch</h2>
+            <div class="description">
+                <p>Are you searching for the perfect words to convey your sentiments? Does plain English fall short of capturing your emotions? Enter your words below and witness the magic as this <b>AI transformer</b> breathes life into your prose, infusing it with the timeless charm of <b>Jane Austen</b>.</p>
+            </div>
+        </header>
+    
+        <main>
+            <button id="button" title="Transform text">Enchant my words 🪄</button>
+            <div class="response" id="response">
+                <span id="text"></span>
+                <span id="afterText"></span>
+            </div>
+            <small>
+                coded by <a href="https://www.linkedin.com/in/lillacsanaky/" target="_blank" rel="noreferrer noopener"
+                    class="linkedin" title="Go to LinkedIn">cslylla</a>
+                and <a href="https://frolicking-otter-4f5fd1.netlify.app" target="_blank" rel="noreferrer noopener"
+                    title="Go to GitHub">open-sourced</a>
+            </small>
+        </main>
+    </div>
+    <script src="src/script.js" type="module"></script>
+</body>
+</html>
