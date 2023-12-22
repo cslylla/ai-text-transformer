@@ -9,21 +9,18 @@
   --button-color: #af3264;
   --button-hover-color: #ff63b5;
   --button-text-color: #ffbbbb;
-  --joke-area-color: #ffbbbb;
-  --joke-area-border-color: #222222;
+  --response-area-color: #ffbbbb;
+  --response-area-border-color: #222222;
 }
-
-body {
-  font-family: "Crimson Pro", serif;
-  color: var(--text-color);
-}
-
 /* General */
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Crimson Pro", serif;
+  color: var(--text-color);
+  font-size: 1.1rem;
 }
 .container {
   background: var(--background-gradient);
@@ -31,16 +28,25 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   margin: 0 auto;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
-/* Title */
+/* Header */
+header {
+  max-width: 60%;
+  margin: 0 auto;
+}
 h1 {
   margin: 0;
   padding-top: 4rem;
 }
 
-/* Joke */
+.welcome-image {
+  max-width: 30%;
+}
+
+/* Transformer */
 main {
   width: 50%;
   margin: 0 auto;
@@ -61,17 +67,17 @@ button:hover {
   background-color: var(--button-hover-color);
 }
 
-.joke {
-  background-color: var(--joke-area-color);
+.response {
+  background-color: var(--response-area-color);
   border-radius: 5px;
-  border: 5px solid var(--joke-area-border-color);
+  border: 5px solid var(--response-area-border-color);
   margin: 2rem 0 0 0;
   padding: 1rem;
   min-height: 15rem;
   text-align: left;
 }
 
-.joke p {
+.response p {
   padding: 0;
   margin: 0;
 }
