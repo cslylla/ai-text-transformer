@@ -46,9 +46,9 @@ h1 {
   max-width: 30%;
 }
 
-/* Transformer */
+/* Main */
 main {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -82,17 +82,18 @@ button:hover {
   margin: 0;
 }
 
-small {
+/* Footer */
+footer {
   font-size: small;
   font-weight: bold;
 }
 
-small a {
+footer a {
   color: var(--button-color);
   text-decoration: none;
 }
 
-small a:hover {
+footer a:hover {
   color: var(--button-hover-color);
 }
 
