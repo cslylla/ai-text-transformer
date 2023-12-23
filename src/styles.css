@@ -11,7 +11,7 @@
   --button-text-color: #ffbbbb;
   --response-area-color: #ffebd6;
   --response-area-border-color: #222222;
-  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 /* General */
 html,
@@ -45,10 +45,12 @@ h1 {
   color: var(--button-color);
   margin: 0;
   padding-top: 4rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
   margin-top: 0;
+  text-shadow: var(--box-shadow);
 }
 
 .welcome-image {
@@ -75,7 +77,7 @@ input[type="text"] {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   padding: 0.75rem 1rem;
-  border: 2px solid rgba(95, 68, 68, 0.5);
+  border: 2px solid rgba(95, 68, 68, 0.3);
   color: var(--text-color);
   font-weight: bold;
   font-size: 1.1rem;
@@ -152,6 +154,15 @@ footer a:hover {
 }
 
 /* Responsive */
+@media only screen and (max-width: 800px) {
+  input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.8rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container {
     padding: 0 2rem 5rem;
@@ -171,14 +182,13 @@ footer a:hover {
   }
 
   form {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .button {
-    font-size: 1rem;
     cursor: pointer;
-    margin-top: 1.5rem;
-    max-width: 100%;
     align-self: center;
+    max-width: 100%;
+    width: 100%;
   }
 }
