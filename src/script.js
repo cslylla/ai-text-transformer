@@ -38,5 +38,5 @@ function typewriterLoop(location, text) {
 
 typewriter(
   welcomeTextElement,
-  "Welcome to <b style='color:#af3264'>Charmed</b>"
+  "Welcome to <span class='highlight'>Charmed </span>"
 );

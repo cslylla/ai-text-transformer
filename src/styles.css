@@ -145,6 +145,13 @@ input:focus {
   padding: 0;
 }
 
+.highlight {
+  color: var(--button-color);
+  font-weight: 900;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+}
+
 /* Footer */
 footer {
   font-size: small;
