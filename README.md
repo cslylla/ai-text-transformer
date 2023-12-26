@@ -24,7 +24,7 @@
 
 - Immerse yourself in Austen's world by enchanting as many phrases as your heart desires.
 
-![Starting page of Charmed](/src/img/page-view.png)
+![Starting page of Charmed](/src/img/home-page.png)
 
 ### 3. Explore Further
 
