@@ -38,13 +38,14 @@
     
         <main>
             <form id="input-form">
-                <input type="text" placeholder="Jot down your words here" autofocus required autocomplete="off" id="user-entry"/>
+                <div class="input">
+                    <input type="text" placeholder="Jot down your words here" autofocus required autocomplete="off" id="user-entry"/>
+                    <div class="info">ie.: <i>'I am sorry, I was late'</i> or <i>'I am so in love with you'</i></div>
+                </div>
                 <input type="submit" id="button"  class="button disabled" title="Transform text" value="Enchant my words 🪄"/>
             </form>
-            <div class="response">
+            <div class="response-card hidden" id="response-card">
                 <p id="response">
-                    <span id="welcome-text"></span>
-                    <span id="after-text"></span>
                 </p>
             </div>
         </main>

@@ -72,7 +72,7 @@ h2 {
 
 /* Main */
 form,
-.response {
+.response-card {
   background-color: var(--response-area-color);
   border-radius: 10px;
   display: flex;
@@ -81,6 +81,19 @@ form,
   justify-content: center;
   row-gap: 1rem;
   box-shadow: var(--box-shadow);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.info {
+  margin: 0.5rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 input[type="text"] {
@@ -133,23 +146,47 @@ input:focus {
   border: 2px solid #f8e7e7;
 }
 
-.response {
-  margin: 2rem 0 0.5rem;
+.response-card {
+  margin: 2rem 0 0 0;
   line-height: 1.5rem;
   border-radius: 0 10px 10px 0;
   border-left: 4px var(--button-color) solid;
 }
 
-.response p {
+.hidden {
+  display: none;
+}
+
+.response-card p {
   margin: 0;
   padding: 0;
 }
 
-.highlight {
+.response-card strong {
   color: var(--button-color);
   font-weight: 900;
   font-family: "Great Vibes", cursive;
   font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  animation: loader 2s ease-in-out infinite;
+  opacity: 1;
 }
 
 /* Footer */
@@ -157,6 +194,7 @@ footer {
   font-size: small;
   font-weight: bold;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 footer a {
@@ -211,7 +249,7 @@ footer a:hover {
   }
 
   form,
-  response {
+  .response-card {
     padding: 1rem;
   }
 
